@@ -15,4 +15,5 @@ void main()
     vec4 colour = texture(ColTexture, TexCoord.xy); 
 
     FragColor = vec4(vec3(colour.xyz * Intensity), 1.0);
+
 }

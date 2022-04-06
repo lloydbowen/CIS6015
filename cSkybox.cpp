@@ -33,5 +33,6 @@ cSkybox::~cSkybox()
 void cSkybox::init()
 {
 	// load in all textures for this environment map here..
+	
 }
 

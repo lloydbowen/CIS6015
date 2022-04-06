@@ -23,11 +23,17 @@ LIGHT:
 	POS:	0.0 10.0 20.0
 }
 
-ENVIRONMENT_MAP: 0
+ENVIRONMENT_MAP: 1
 {
+	RIGHT:	right.tga
+	LEFT:	left.tga
+	TOP:	top.tga
+	BASE:	base.tga
+	FRONT:	front.tga
+	BACK:	back.tga
 }
 
-MESH_COUNT: 2
+MESH_COUNT: 5
 MESH: torus.obj
 {
 	NAME:		torus
@@ -48,8 +54,38 @@ MESH: torus.obj
 	VEL:		0.2 0.1 0.0
 	SHADER_ID	0
 }
+MESH: torus_multi.obj
+{
+	NAME:		torusmulti
+	POS:		-1.5 0.5 -2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.2 0.2 0.0
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	0
+}
+MESH: skybox.obj
+{
+	NAME:		skybox
+	POS:		-1.5 0.5 -2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.0 0.0 0.0
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	0
+}
+MESH: plane.obj
+{
+	NAME:		plane
+	POS:		0.0 -1.8 3.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.0 0.0 0.0
+	SCALE:		1.5 1.0 1.0
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	0
+}
 
-
-SHADER_COUNT: 2
+SHADER_COUNT: 3
 SHADER:	shaders/diffuse	VERT_SHDR	FRAG_SHDR
 SHADER:	shaders/toon	VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/multi	VERT_SHDR	FRAG_SHDR

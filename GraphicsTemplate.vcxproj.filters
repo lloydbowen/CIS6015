@@ -94,16 +94,22 @@
     <None Include="scene.sdf">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="shaders\diffuse.vs">
+    <None Include="shaders\toon.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\toon.vs">
       <Filter>shaders</Filter>
     </None>
     <None Include="shaders\diffuse.fs">
       <Filter>shaders</Filter>
     </None>
-    <None Include="shaders\toon.fs">
+    <None Include="shaders\diffuse.vs">
       <Filter>shaders</Filter>
     </None>
-    <None Include="shaders\toon.vs">
+    <None Include="shaders\multi.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\multi.vs">
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>
