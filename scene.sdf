@@ -1,0 +1,55 @@
+CAMERA_COUNT:	2
+CAMERA:
+{
+	FOV:	45.0 
+	NEAR:	0.5
+	FAR:	100.0
+	POS:	0.0 0.0 10.0
+	ROT:	0.0 0.0 0.0
+}
+CAMERA:
+{
+	FOV:	45.0 
+	NEAR:	0.5
+	FAR:	100.0
+	POS:	10.0 0.0 0.0
+	ROT:	0.0 90.0 0.0
+}
+
+LIGHT_COUNT: 1
+LIGHT:
+{
+	TYPE:	0
+	POS:	0.0 10.0 20.0
+}
+
+ENVIRONMENT_MAP: 0
+{
+}
+
+MESH_COUNT: 2
+MESH: torus.obj
+{
+	NAME:		torus
+	POS:		0.0 0.0 2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.2 0.2 0.0 
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	0
+}
+MESH: torus.obj
+{
+	NAME:		torus
+	POS:		-1.5 0.5 -2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.2 0.2 0.0
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	0
+}
+
+
+SHADER_COUNT: 2
+SHADER:	shaders/diffuse	VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/toon	VERT_SHDR	FRAG_SHDR
