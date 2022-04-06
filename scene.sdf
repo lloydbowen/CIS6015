@@ -46,10 +46,10 @@ MESH: torus.obj
 }
 MESH: torus.obj
 {
-	NAME:		torus
-	POS:		-1.5 0.5 -2.0
+	NAME:		torus2
+	POS:		-2.5 1.0 -2.0
 	ROT:		0.0 0.0 0.0
-	ROT_INCR:	0.2 0.2 0.0
+	ROT_INCR:	0.2 0.5 0.4
 	SCALE:		0.5 0.5 0.5
 	VEL:		0.2 0.1 0.0
 	SHADER_ID	0
@@ -57,9 +57,9 @@ MESH: torus.obj
 MESH: torus_multi.obj
 {
 	NAME:		torusmulti
-	POS:		-1.5 0.5 -2.0
+	POS:		2.0 1.5 -1.5
 	ROT:		0.0 0.0 0.0
-	ROT_INCR:	0.2 0.2 0.0
+	ROT_INCR:	-0.2 -0.2 0.0
 	SCALE:		0.5 0.5 0.5
 	VEL:		0.2 0.1 0.0
 	SHADER_ID	0
