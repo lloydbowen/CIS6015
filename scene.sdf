@@ -33,7 +33,7 @@ ENVIRONMENT_MAP: 1
 	BACK:	back.tga
 }
 
-MESH_COUNT: 5
+MESH_COUNT: 8
 MESH: torus.obj
 {
 	NAME:		torus
@@ -52,7 +52,7 @@ MESH: torus.obj
 	ROT_INCR:	0.2 0.5 0.4
 	SCALE:		0.5 0.5 0.5
 	VEL:		0.2 0.1 0.0
-	SHADER_ID	0
+	SHADER_ID	1
 }
 MESH: torus_multi.obj
 {
@@ -84,8 +84,40 @@ MESH: plane.obj
 	VEL:		0.2 0.1 0.0
 	SHADER_ID	0
 }
+MESH: ball.obj
+{
+	NAME:		ball
+	POS:		0.0 0.0 2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.2 0.2 0.0 
+	SCALE:		0.2 0.2 0.2
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	1
+}
+MESH: ball.obj
+{
+	NAME:		ball
+	POS:		3.0 0.0 2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.2 0.2 0.0 
+	SCALE:		0.7 0.7 0.7
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	0
+}
+MESH: ball.obj
+{
+	NAME:		ball
+	POS:		-3.0 -1.0 2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.2 0.7 0.2 
+	SCALE:		0.7 0.7 0.7
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	0
+}
 
-SHADER_COUNT: 3
+SHADER_COUNT: 4
 SHADER:	shaders/diffuse	VERT_SHDR	FRAG_SHDR
 SHADER:	shaders/toon	VERT_SHDR	FRAG_SHDR
 SHADER:	shaders/multi	VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/tess	VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/geo		VERT_SHDR	FRAG_SHDR

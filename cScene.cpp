@@ -48,7 +48,18 @@ void cScene::render()
 	{
 		m_Mesh[i].render(this, &m_ShaderInfo);
 	}
+	//multipass rendering
+	glReadBuffer(GL_BACK);
+	glBindTexture(GL_TEXTURE_2D, m_tex[0]);
+	glCopyTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 0, 0, width, height, 0);
 
+	glBindTexture(GL_TEXTURE_2D, m_tex[0]);
+	glDrawBuffer(GL_BACK);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+
+	glActiveTexture(GL_TEXTURE0 + m_tex[0]);
 }
 
 /////////////////////////////////////////////////////////////////////////////////////

@@ -42,6 +42,9 @@ public:
 	int m_mesh_count;
 	int m_cameraId;
 	int m_lightId;
+	int height;
+	int width;
+	int m_tex[];
 
 private:
 

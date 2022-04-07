@@ -169,8 +169,11 @@
     <None Include="scene.sdf" />
     <None Include="shaders\diffuse.fs" />
     <None Include="shaders\diffuse.vs" />
+    <None Include="shaders\face.gs" />
     <None Include="shaders\multi.fs" />
     <None Include="shaders\multi.vs" />
+    <None Include="shaders\tess.fs" />
+    <None Include="shaders\tess.vs" />
     <None Include="shaders\toon.fs" />
     <None Include="shaders\toon.vs" />
   </ItemGroup>

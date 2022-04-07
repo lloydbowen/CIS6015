@@ -112,5 +112,14 @@
     <None Include="shaders\multi.vs">
       <Filter>shaders</Filter>
     </None>
+    <None Include="shaders\tess.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\tess.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\face.gs">
+      <Filter>shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
