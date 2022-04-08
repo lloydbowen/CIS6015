@@ -62,7 +62,7 @@ MESH: torus_multi.obj
 	ROT_INCR:	-0.2 -0.2 0.0
 	SCALE:		0.5 0.5 0.5
 	VEL:		0.2 0.1 0.0
-	SHADER_ID	0
+	SHADER_ID	2
 }
 MESH: skybox.obj
 {
@@ -82,7 +82,7 @@ MESH: plane.obj
 	ROT_INCR:	0.0 0.0 0.0
 	SCALE:		1.5 1.0 1.0
 	VEL:		0.2 0.1 0.0
-	SHADER_ID	0
+	SHADER_ID	2
 }
 MESH: ball.obj
 {
@@ -102,7 +102,7 @@ MESH: ball.obj
 	ROT_INCR:	0.2 0.2 0.0 
 	SCALE:		0.7 0.7 0.7
 	VEL:		0.2 0.1 0.0
-	SHADER_ID	0
+	SHADER_ID	4
 }
 MESH: ball.obj
 {
@@ -115,9 +115,9 @@ MESH: ball.obj
 	SHADER_ID	0
 }
 
-SHADER_COUNT: 4
+SHADER_COUNT: 5
 SHADER:	shaders/diffuse	VERT_SHDR	FRAG_SHDR
 SHADER:	shaders/toon	VERT_SHDR	FRAG_SHDR
 SHADER:	shaders/multi	VERT_SHDR	FRAG_SHDR
 SHADER:	shaders/tess	VERT_SHDR	FRAG_SHDR
-SHADER:	shaders/geo		VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/face	VERT_SHDR	FRAG_SHDR

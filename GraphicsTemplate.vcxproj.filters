@@ -118,7 +118,7 @@
     <None Include="shaders\tess.vs">
       <Filter>shaders</Filter>
     </None>
-    <None Include="shaders\face.gs">
+    <None Include="shaders\face.fs">
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>

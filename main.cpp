@@ -50,7 +50,7 @@ void keyboard(GLFWwindow* window, int key, int scancode, int action, int mods)
 		break;
 		
 		case GLFW_KEY_1:
-			//switch camera
+			//press 1 to switch camera
 			if (Scene.m_cameraId == 1) {
 				Scene.m_cameraId = 0;
 			}

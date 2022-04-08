@@ -16,12 +16,12 @@ void main()
 
 	FragColor = vec4(vec3(colour.xyz * Intensity), 1.0);
 
-    if (Intensity > 0.75)
-		colour = vec4(1.0,0.5,0.5,1.0);
+    if (Intensity > 0.8)
+		colour = vec4(1.0,0.8,0.8,1.0);
 	else if (Intensity > 0.5)
-		colour = vec4(0.6,0.3,0.3,1.0);
-	else if (Intensity > 0.25)
-		colour = vec4(0.4,0.2,0.2,1.0);
+		colour = vec4(0.7,0.5,0.5,1.0);
+	else if (Intensity > 0.3)
+		colour = vec4(0.5,0.3,0.3,1.0);
 	else
 		colour = vec4(0.2,0.1,0.1,1.0);
 	FragColor = colour;

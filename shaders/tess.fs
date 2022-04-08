@@ -15,8 +15,8 @@ out vec3 Normal_CS_in; //Normal
 //////////////////////////////////////////////////////////////////
 void main()
 {
-    //this isnt working
-    WorldPos_CS_in = (gWorld * vec4(Position_VS_in, 1.0)).xyz;
-    TexCoord_CS_in = TexCoord_VS_in;
-    Normal_CS_in = (gWorld * vec4(Normal_VS_in, 0.0)).xyz;
+    ///this isnt working
+    //WorldPos_CS_in = (gWorld * vec4(Position_VS_in, 1.0)).xyz;
+    //TexCoord_CS_in = TexCoord_VS_in;
+    //Normal_CS_in = (gWorld * vec4(Normal_VS_in, 0.0)).xyz;
 }
